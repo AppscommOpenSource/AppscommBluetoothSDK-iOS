@@ -5,7 +5,8 @@ AppscommBluetoothSDK-iOS 是广东乐源数字技术有限公司对手环蓝牙�
 iOS 7.0+
 
 # 使用说明
-- 工程添加`CoreBluetooth.framework`
+- 工程添加`CoreBluetooth.framework`, AppscommBluetoothSDK目录下面的lib和.h
+- lib支持armv7, armv7s, arm64，不支持i386
 - 首先在`didFinishLaunchingWithOptions`调用`[AppscommBluetoothSDK startRunBluetooth]`
 
 ```

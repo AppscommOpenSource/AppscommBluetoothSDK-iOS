@@ -474,7 +474,7 @@
     __weak TestSDKViewController *weakSelf = self;
     switch (index) {
         case 0:{
-            [[AppscommBluetoothSDK sharedInstance] addReminderWithType:0 hour:13 minute:16 period:4 completion:^(NSError *error){
+            [[AppscommBluetoothSDK sharedInstance] addReminderWithType:AppscommReminderTypeDrinkWater hour:13 minute:16 period:4 completion:^(NSError *error){
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [weakSelf showAlertWithString:[NSString stringWithFormat:@"%@", error?error:@"成功"]];
                 });

@@ -112,7 +112,7 @@
 
 /**
  *  获取当前设备状态
- *  @since 只支持设备:L11, L28T, L28W, L28H
+ *  @since 只支持设备:L11, L38A, L28W, L28H
  */
 - (void)readDeviceCurrentStatus:(AppscommReadDeviceStatusCallback)completion;
 
@@ -258,7 +258,7 @@
  *  @param format 时间格式
  *  @param unit   距离单位
  *  @since AppscommTimeFormat中'AppscommTimeFormat_24H'和'AppscommTimeFormat_12H'支持所有设备，
- 其他只支持设备:L11, L28T, L28W, L28H
+           其他只支持设备:L11, L38A, L28W, L28H
  */
 - (void)writeTimeFormat:(AppscommTimeFormat)format
            distanceUnit:(AppscommDidstanceUnit)unit
@@ -272,7 +272,7 @@
 
 /**
  *  设置预设睡眠时间，设备会自动进入睡眠，自动醒来
- *  @since 只支持设备:L11, L28T, L28W, L28H
+ *  @since 只支持设备:L11, L38A, L28W, L28H
  *
  *  @param isOpened    开关状态
  *  @param sleepHour   睡眠小时数
@@ -290,25 +290,25 @@
 
 /**
  *  获取预设睡眠参数
- *  @since 只支持设备:L11, L28T, L28W, L28H
+ *  @since 只支持设备:L11, L38A, L28W, L28H
  */
 - (void)readAutomaticSleepTime:(AppscommReadAutomaticSleepTimeCallback)completion;
 
 /**
  *  手动让设备进入睡眠
- *  @since 只支持设备:L11
+ *  @since 只支持设备:L11, L38A, L28W
  */
 - (void)manuallyEnterSleep:(AppscommWriteSettingsCallback)completion;
 
 /**
  *  手动让设备退出睡眠
- *  @since 只支持设备:L11
+ *  @since 只支持设备:L11, L38A, L28W
  */
 - (void)manuallyQuitSleep:(AppscommWriteSettingsCallback)completion;
 
 /**
  *  通知开关设置
- *  @since 只支持设备:L11, L28T, L28W, L28H
+ *  @since 只支持设备:L11, L38A, L28T, L28W, L28H
  *
  *  @param callIsOpened       来电
  *  @param missedCallIsOpened 未接来电
@@ -329,13 +329,13 @@
 
 /**
  *  获取通知状态
- *  @since 只支持设备:L11, L28T, L28W, L28H
+ *  @since 只支持设备:L11, L38A, L28T, L28W, L28H
  */
 - (void)readNotificationsStatus:(AppscommReadNotificationsStatusCallback)completion;
 
 /**
  *  设置久坐提醒
- *  @since 只支持设备:L11, L28T, L28W, L28H
+ *  @since 只支持设备:L11, L38A, L28W, L28H
  *
  *  @param isOpen      开关
  *  @param internal    间隔
@@ -359,13 +359,13 @@
 
 /**
  *  获取久坐提醒信息
- *  @since 只支持设备:L11, L28T, L28W, L28H
+ *  @since 只支持设备:L11, L38A, L28W, L28H
  */
 - (void)readInactivityAlertInfo:(AppscommReadInactivityAlertInfoCallback)completion;
 
 /**
  *  设置屏幕亮度
- *  @since 只支持设备:L11, L28T, L28W, L28H
+ *  @since 只支持设备:L11, L38A, L28W, L28H
  *
  *  @param lightness 亮度
  */
@@ -373,7 +373,7 @@
 
 /**
  *  获取屏幕亮度
- *  @since 只支持设备:L11, L28T, L28W, L28H
+ *  @since 只支持设备:L11, L38A, L28W, L28H
  */
 - (void)readScreenLightness:(AppscommReadLightnessCallback)completion;
 

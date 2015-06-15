@@ -86,7 +86,7 @@ typedef NS_ENUM(NSUInteger, AppscommDeviceStatus) {
 };
 
 /*
- *  提醒类型
+ *  提醒类型，每一种设备只支持6种类型
  */
 typedef NS_ENUM(NSUInteger, AppscommReminderType) {
     /*
@@ -96,20 +96,24 @@ typedef NS_ENUM(NSUInteger, AppscommReminderType) {
     AppscommReminderTypeMadicine,   //吃药
     AppscommReminderTypeActivity,   //运动
     AppscommReminderTypeSleep,      //睡觉
+    
+    /*
+     *  以下类型适用于L28C, L28S, L28T
+     */
     AppscommReminderTypeCustom,     //自定义
     
     /*
-     *  以下类型适用于L11, L28C, L28S
+     *  以下类型适用于L28C, L28S
      */
     AppscommReminderTypeDrinkWater, //喝水
     
     /*
-     *  以下类型适用于L28T
+     *  以下类型适用于L11, L28W, L38A, L28T
      */
     AppscommReminderTypeWakeup,     //清醒(起床)
     
     /*
-     *  以下类型适用于L11
+     *  以下类型适用于L11, L28W, L38A,
      */
     AppscommReminderTypeMeeting,    //会议
     

@@ -80,7 +80,6 @@ typedef NS_ENUM(NSUInteger, AppscommDidstanceUnit) {
  *  设备当前状态
  */
 typedef NS_ENUM(NSUInteger, AppscommDeviceStatus) {
-    AppscommDeviceUnknown = -1,   //未知
     AppscommDeviceNormal  = 0,    //正常计步状态
     AppscommDeviceInSleep = 1,    //睡眠状态
 };

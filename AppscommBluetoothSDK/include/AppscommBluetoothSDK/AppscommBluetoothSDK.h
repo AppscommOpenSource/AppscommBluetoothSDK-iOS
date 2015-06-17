@@ -269,8 +269,9 @@
  *  @param unit   距离单位
  *  @since AppscommTimeFormat中'AppscommTimeFormat_24H'和'AppscommTimeFormat_12H'支持所有设备，
            其他只支持设备:L11, L38A, L28W, L28H
+           v2.1.1之后，format不再限制AppscommTimeFormat类型，整数即可，因为这个参数在各个产品都不同，可以自定义
  */
-- (void)writeTimeFormat:(AppscommTimeFormat)format
+- (void)writeTimeFormat:(NSUInteger)format
            distanceUnit:(AppscommDidstanceUnit)unit
              completion:(AppscommWriteSettingsCallback)completion;
 

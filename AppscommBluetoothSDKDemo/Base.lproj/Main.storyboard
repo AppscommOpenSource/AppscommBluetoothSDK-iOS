@@ -11,7 +11,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Vo8-hy-4Ad">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommandCellID" textLabel="bqN-7s-OdU" style="IBUITableViewCellStyleDefault" id="tS4-ks-cWW">
                                 <rect key="frame" x="0.0" y="86" width="320" height="50"/>
@@ -23,7 +23,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bqN-7s-OdU">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -82,7 +82,7 @@
             </objects>
             <point key="canvasLocation" x="1965" y="432"/>
         </scene>
-        <!--搜索设备-->
+        <!--Scan Devices Table View Controller-->
         <scene sceneID="mVm-oo-1jZ">
             <objects>
                 <tableViewController id="cB2-dG-LpM" customClass="ScanDevicesTableViewController" sceneMemberID="viewController">
@@ -99,7 +99,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="maF-da-SrW">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ImS-BS-74i">
@@ -117,7 +117,7 @@
                             <outlet property="delegate" destination="cB2-dG-LpM" id="0RY-29-Gb3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="搜索设备" id="1qz-V6-Jkj"/>
+                    <navigationItem key="navigationItem" id="1qz-V6-Jkj"/>
                     <connections>
                         <segue destination="ssq-16-c6q" kind="show" identifier="TestSDKSegueID" id="pB7-fR-rQQ"/>
                     </connections>

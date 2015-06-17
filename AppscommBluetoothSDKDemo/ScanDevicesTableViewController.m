@@ -8,8 +8,11 @@
 
 #import "ScanDevicesTableViewController.h"
 #import "AppscommDevice.h"
+#import "TestSDKViewController.h"
+
 @interface ScanDevicesTableViewController ()
 @property (nonatomic, strong) NSArray *devicesArray;
+@property (nonatomic, strong) UIButton *rightButton;
 @end
 
 @implementation ScanDevicesTableViewController
@@ -18,15 +21,14 @@
     [super viewDidLoad];
     self.devicesArray = [NSArray new];
     
-    UIBarButtonItem *rightbarButton = [[UIBarButtonItem alloc] initWithTitle:@"搜索5秒" style:UIBarButtonItemStylePlain target:self action:@selector(searchDevices)];
-    self.navigationItem.rightBarButtonItem = rightbarButton;
-    [self searchDevices];
-    //[self connectSpecialDevice];
-}
+    _rightButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    _rightButton.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 70, 10, 70, 30);
+    [_rightButton setTitle:@"扫描设备" forState:UIControlStateNormal];
+    [_rightButton setTitle:@"停止扫描" forState:UIControlStateSelected];
+    [_rightButton addTarget:self action:@selector(searchDevices) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:_rightButton];
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    
+    [self searchDevices];
 }
 
 //测试连接已绑定的设备
@@ -52,19 +54,28 @@
 
 //搜索设备，未绑定的情况下
 - (void)searchDevices{
-    self.devicesArray = nil;
-    [self.tableView reloadData];
-    __weak ScanDevicesTableViewController *weakSelf = self;
+    self.rightButton.selected = !self.rightButton.selected;
+    if (self.rightButton.selected) {
+        self.devicesArray = nil;
+        [self.tableView reloadData];
+        
+        [[AppscommBluetoothSDK sharedInstance] scanDevicesWithType:self.deviceType
+                                                   timeoutInternal:5
+                                                        completion:^(NSArray *scanedDevices,NSError *error){
+                                                            ASYNC_MAIN_QUEUE_START
+                                                            self.devicesArray = [NSArray arrayWithArray:scanedDevices];
+                                                            if (self.rightButton.selected) {
+                                                                self.rightButton.selected = NO;
+                                                            }
+                                                            [self.tableView reloadData];
+                                                            ASYNC_MAIN_QUEUE_END
+                                                            
+                                                            
+                                                        }];
+    }else{
+        [[AppscommBluetoothSDK sharedInstance] stopScanDevices];
+    }
 
-    [[AppscommBluetoothSDK sharedInstance] scanDevicesWithType:self.deviceType
-                                               timeoutInternal:5
-                                                    completion:^(NSArray *scanedDevices,NSError *error){
-                                                        if (!error) {
-                                                            weakSelf.devicesArray = [NSArray arrayWithArray:scanedDevices];
-                                                            [weakSelf.tableView reloadData];
-                                                        }
-
-    }];
 }
 
 - (void)showAlertWithString:(NSString *)msg{

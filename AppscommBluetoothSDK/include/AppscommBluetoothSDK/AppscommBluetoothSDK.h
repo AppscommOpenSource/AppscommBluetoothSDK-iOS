@@ -49,6 +49,11 @@
                  completion:(AppscommScanDevicesCallback)completion;
 
 /**
+ *  停止扫描设备
+ */
+- (void)stopScanDevices;
+
+/**
  *  连接指定设备
  *
  *  @param device      指定设备
@@ -69,6 +74,11 @@
                       watchID:(NSString *)aWatchID
               timeoutInternal:(NSUInteger)seconds
                    completion:(AppscommConnectDeviceCallback)completion;
+
+/**
+ *  停止连接设备
+ */
+- (void)stopConnectDevice;
 
 /**
  *  以下方法是发送各种蓝牙命令

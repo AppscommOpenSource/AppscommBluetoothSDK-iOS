@@ -59,4 +59,16 @@ __weak ScanDevicesTableViewController *weakSelf = self;
                                completion:(AppscommWriteSettingsCallback)completion;
 ```
 
+#更新历史
+##v2.1.1
+- 不限制时间格式的类型，因为这个参数在不同产品都不一样
+
+##v2.1
+- 增加停止扫描功能
+- 增加断开连接设备功能
+- 增加超时判断，10秒钟设备无反应将回调NSError
+
+##v2.0
+- 采用Block机制重写蓝牙SDK
+- 增加不同产品类型的兼容性
 

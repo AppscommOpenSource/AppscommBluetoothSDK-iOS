@@ -17,7 +17,6 @@
 		846EA9231B059E6D00F51D0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846EA9211B059E6D00F51D0B /* LaunchScreen.xib */; };
 		846EA94D1B05AFBA00F51D0B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846EA94C1B05AFBA00F51D0B /* CoreBluetooth.framework */; };
 		849C59401B13F9CA00095451 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849C593F1B13F9CA00095451 /* DetailViewController.m */; };
-		849C5AA11B182E9900095451 /* libAppscommBluetoothSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 849C5AA01B182E9900095451 /* libAppscommBluetoothSDK.a */; };
 		84D4D3DA1B107A0F00E490FD /* SelectProductTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D4D3D91B107A0F00E490FD /* SelectProductTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +42,6 @@
 		849C5A9D1B182E9900095451 /* AppscommBluetoothSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppscommBluetoothSDK.h; sourceTree = "<group>"; };
 		849C5A9E1B182E9900095451 /* AppscommDataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppscommDataTypes.h; sourceTree = "<group>"; };
 		849C5A9F1B182E9900095451 /* AppscommDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppscommDevice.h; sourceTree = "<group>"; };
-		849C5AA01B182E9900095451 /* libAppscommBluetoothSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppscommBluetoothSDK.a; sourceTree = "<group>"; };
 		84D4D3D81B107A0F00E490FD /* SelectProductTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectProductTableViewController.h; sourceTree = "<group>"; };
 		84D4D3D91B107A0F00E490FD /* SelectProductTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectProductTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,7 +52,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				846EA94D1B05AFBA00F51D0B /* CoreBluetooth.framework in Frameworks */,
-				849C5AA11B182E9900095451 /* libAppscommBluetoothSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				849C5A9B1B182E9900095451 /* include */,
-				849C5AA01B182E9900095451 /* libAppscommBluetoothSDK.a */,
 			);
 			path = AppscommBluetoothSDK;
 			sourceTree = "<group>";
@@ -336,9 +332,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/admin/project-src/AppscommBluetoothSDK/AppscommBluetoothSDK",
-					"$(PROJECT_DIR)/AppscommBluetoothSDK",
+					"$(PROJECT_DIR)/AppscommBluetoothSDK/Debug",
 				);
+				OTHER_LDFLAGS = "-lAppscommBluetoothSDK";
+				PRELINK_LIBS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -354,9 +351,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/admin/project-src/AppscommBluetoothSDK/AppscommBluetoothSDK",
-					"$(PROJECT_DIR)/AppscommBluetoothSDK",
+					"$(PROJECT_DIR)/AppscommBluetoothSDK/Release",
 				);
+				OTHER_LDFLAGS = "-lAppscommBluetoothSDK";
+				PRELINK_LIBS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

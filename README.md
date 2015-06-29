@@ -62,6 +62,10 @@ __weak ScanDevicesTableViewController *weakSelf = self;
 ```
 
 #更新历史
+
+##v2.1.2 
+- 当蓝牙功能关闭时，调用系统的打开蓝牙提示
+
 ##v2.1.1
 - 不限制时间格式的类型，因为这个参数在不同产品都不一样
 

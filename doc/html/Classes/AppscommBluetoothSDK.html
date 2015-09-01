@@ -1,0 +1,2567 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AppscommBluetoothSDK Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppscommBluetoothSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Appscomm</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sharedInstance">+ sharedInstance</option>
+		
+		<option value="//api/name/startRunBluetooth">+ startRunBluetooth</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addReminderWithType:hour:minute:period:completion:">- addReminderWithType:hour:minute:period:completion:</option>
+		
+		<option value="//api/name/cleanAllReminders:">- cleanAllReminders:</option>
+		
+		<option value="//api/name/connectDevice:timeoutInternal:completion:">- connectDevice:timeoutInternal:completion:</option>
+		
+		<option value="//api/name/connectDeviceWithType:watchID:timeoutInternal:completion:">- connectDeviceWithType:watchID:timeoutInternal:completion:</option>
+		
+		<option value="//api/name/deleteReminderWithHour:minute:completion:">- deleteReminderWithHour:minute:completion:</option>
+		
+		<option value="//api/name/manuallyEnterSleep:">- manuallyEnterSleep:</option>
+		
+		<option value="//api/name/manuallyQuitSleep:">- manuallyQuitSleep:</option>
+		
+		<option value="//api/name/readAutomaticSleepTime:">- readAutomaticSleepTime:</option>
+		
+		<option value="//api/name/readDeviceBatteryPower:">- readDeviceBatteryPower:</option>
+		
+		<option value="//api/name/readDeviceCurrentStatus:">- readDeviceCurrentStatus:</option>
+		
+		<option value="//api/name/readFirmwareInformation:">- readFirmwareInformation:</option>
+		
+		<option value="//api/name/readFirmwareVersion:">- readFirmwareVersion:</option>
+		
+		<option value="//api/name/readInactivityAlertInfo:">- readInactivityAlertInfo:</option>
+		
+		<option value="//api/name/readNotificationsStatus:">- readNotificationsStatus:</option>
+		
+		<option value="//api/name/readProductType:">- readProductType:</option>
+		
+		<option value="//api/name/readReminders:">- readReminders:</option>
+		
+		<option value="//api/name/readScreenLightness:">- readScreenLightness:</option>
+		
+		<option value="//api/name/readSleepData:">- readSleepData:</option>
+		
+		<option value="//api/name/readSleepDetailDataCount:">- readSleepDetailDataCount:</option>
+		
+		<option value="//api/name/readSportData:">- readSportData:</option>
+		
+		<option value="//api/name/readSportDetailDataCount:">- readSportDetailDataCount:</option>
+		
+		<option value="//api/name/readTimeFormatAndDistanceUnit:">- readTimeFormatAndDistanceUnit:</option>
+		
+		<option value="//api/name/readTodaySportTotalData:">- readTodaySportTotalData:</option>
+		
+		<option value="//api/name/readUserInfo:">- readUserInfo:</option>
+		
+		<option value="//api/name/readWatchID:">- readWatchID:</option>
+		
+		<option value="//api/name/resetDevice">- resetDevice</option>
+		
+		<option value="//api/name/scanDevicesWithType:timeoutInternal:completion:">- scanDevicesWithType:timeoutInternal:completion:</option>
+		
+		<option value="//api/name/stopConnectDevice">- stopConnectDevice</option>
+		
+		<option value="//api/name/stopScanDevices">- stopScanDevices</option>
+		
+		<option value="//api/name/writeAutomaticSleepOpened:sleepHour:sleepMinute:awakeHour:awakeMinute:completion:">- writeAutomaticSleepOpened:sleepHour:sleepMinute:awakeHour:awakeMinute:completion:</option>
+		
+		<option value="//api/name/writeCaloriesGoal:completion:">- writeCaloriesGoal:completion:</option>
+		
+		<option value="//api/name/writeCustomTimeWithYear:month:day:hour:minute:second:completion:">- writeCustomTimeWithYear:month:day:hour:minute:second:completion:</option>
+		
+		<option value="//api/name/writeDistanceGoal:completion:">- writeDistanceGoal:completion:</option>
+		
+		<option value="//api/name/writeInactivityAlertStatus:internal:startHour:startMinute:endHour:endMinute:period:steps:completion:">- writeInactivityAlertStatus:internal:startHour:startMinute:endHour:endMinute:period:steps:completion:</option>
+		
+		<option value="//api/name/writeNotificationsWithCallsStatus:missedCallsStatus:SMSStatus:emailStatus:socialMediaStatus:calendarStatus:antiLostStatus:completion:">- writeNotificationsWithCallsStatus:missedCallsStatus:SMSStatus:emailStatus:socialMediaStatus:calendarStatus:antiLostStatus:completion:</option>
+		
+		<option value="//api/name/writeScreenLightness:completion:">- writeScreenLightness:completion:</option>
+		
+		<option value="//api/name/writeStepsGoal:completion:">- writeStepsGoal:completion:</option>
+		
+		<option value="//api/name/writeSystemTime:">- writeSystemTime:</option>
+		
+		<option value="//api/name/writeTimeFormat:distanceUnit:completion:">- writeTimeFormat:distanceUnit:completion:</option>
+		
+		<option value="//api/name/writeUserInfoWithGenderIsFemale:height:weight:willCleanData:completion:">- writeUserInfoWithGenderIsFemale:height:weight:willCleanData:completion:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AppscommBluetoothSDK Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AppscommBluetoothSDK.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Copyright &copy; 2015 Appscomm Inc. All rights reserved.
+FileName:  AppscommBluetoothSDK.h
+Author:  zhangwen
+Date:  2015/05/15
+Description: 蓝牙管理类
+Others:</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/startRunBluetooth" title="startRunBluetooth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startRunBluetooth">+&nbsp;startRunBluetooth</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>程序启动时调用, 最好放在UIApplicationDelegate里面</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)startRunBluetooth</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>程序启动时调用, 最好放在UIApplicationDelegate里面</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AppscommBluetoothSDK 单例，所有的方法调用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (AppscommBluetoothSDK *)sharedInstance</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AppscommBluetoothSDK 单例，所有的方法调用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanDevicesWithType:timeoutInternal:completion:" title="scanDevicesWithType:timeoutInternal:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanDevicesWithType:timeoutInternal:completion:">&ndash;&nbsp;scanDevicesWithType:timeoutInternal:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>扫描设备,根据设备类型来过滤</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanDevicesWithType:(AppscommDeviceType)<em>aDeviceType</em> timeoutInternal:(NSUInteger)<em>seconds</em> completion:(AppscommScanDevicesCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>seconds</code></th>
+						<td><p>超时，秒数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceType</code></th>
+						<td><p>设备类型</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>扫描设备,根据设备类型来过滤</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopScanDevices" title="stopScanDevices"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopScanDevices">&ndash;&nbsp;stopScanDevices</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>停止扫描设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopScanDevices</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>停止扫描设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connectDevice:timeoutInternal:completion:" title="connectDevice:timeoutInternal:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectDevice:timeoutInternal:completion:">&ndash;&nbsp;connectDevice:timeoutInternal:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>连接指定设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connectDevice:(AppscommDevice *)<em>device</em> timeoutInternal:(NSUInteger)<em>seconds</em> completion:(AppscommConnectDeviceCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>device</code></th>
+						<td><p>指定设备</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>seconds</code></th>
+						<td><p>超时，秒数</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>连接指定设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connectDeviceWithType:watchID:timeoutInternal:completion:" title="connectDeviceWithType:watchID:timeoutInternal:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectDeviceWithType:watchID:timeoutInternal:completion:">&ndash;&nbsp;connectDeviceWithType:watchID:timeoutInternal:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>连接指定watchid的设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connectDeviceWithType:(AppscommDeviceType)<em>aDeviceType</em> watchID:(NSString *)<em>aWatchID</em> timeoutInternal:(NSUInteger)<em>seconds</em> completion:(AppscommConnectDeviceCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aDeviceType</code></th>
+						<td><p>设备类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>seconds</code></th>
+						<td><p>超时，秒数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>watchID</code></th>
+						<td><p>设备的WatchID，每个设备都有的唯一值</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>连接指定watchid的设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopConnectDevice" title="stopConnectDevice"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopConnectDevice">&ndash;&nbsp;stopConnectDevice</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>停止连接设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopConnectDevice</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>停止连接设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readWatchID:" title="readWatchID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readWatchID:">&ndash;&nbsp;readWatchID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取设备的WatchID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readWatchID:(AppscommReadStringValueCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>回调中的NSString为WatchID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取设备的WatchID</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readProductType:" title="readProductType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readProductType:">&ndash;&nbsp;readProductType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取设备的产品类型</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readProductType:(AppscommReadStringValueCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取设备的产品类型</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readFirmwareVersion:" title="readFirmwareVersion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readFirmwareVersion:">&ndash;&nbsp;readFirmwareVersion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取固件的版本号</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readFirmwareVersion:(AppscommReadStringValueCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取固件的版本号</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readFirmwareInformation:" title="readFirmwareInformation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readFirmwareInformation:">&ndash;&nbsp;readFirmwareInformation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取设备的固件信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readFirmwareInformation:(AppscommReadStringValueCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取设备的固件信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readDeviceBatteryPower:" title="readDeviceBatteryPower:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readDeviceBatteryPower:">&ndash;&nbsp;readDeviceBatteryPower:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取设备的电池电量</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readDeviceBatteryPower:(AppscommReadIntegerValueCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取设备的电池电量</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readDeviceCurrentStatus:" title="readDeviceCurrentStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readDeviceCurrentStatus:">&ndash;&nbsp;readDeviceCurrentStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取当前设备状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readDeviceCurrentStatus:(AppscommReadDeviceStatusCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>只支持设备:L11, L38A, L28W, L28H</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取当前设备状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readTodaySportTotalData:" title="readTodaySportTotalData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readTodaySportTotalData:">&ndash;&nbsp;readTodaySportTotalData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取今天的运动汇总数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readTodaySportTotalData:(AppscommReadTodaySportTotalDataCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取今天的运动汇总数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readSportData:" title="readSportData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readSportData:">&ndash;&nbsp;readSportData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取运动数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readSportData:(AppscommReadSportDataCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取运动数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readSportDetailDataCount:" title="readSportDetailDataCount:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readSportDetailDataCount:">&ndash;&nbsp;readSportDetailDataCount:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取运动详细数据数量</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readSportDetailDataCount:(AppscommReadIntegerValueCallback)<em>competion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取运动详细数据数量</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readSleepData:" title="readSleepData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readSleepData:">&ndash;&nbsp;readSleepData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取睡眠数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readSleepData:(AppscommReadSleepDataCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取睡眠数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readSleepDetailDataCount:" title="readSleepDetailDataCount:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readSleepDetailDataCount:">&ndash;&nbsp;readSleepDetailDataCount:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取睡眠详细数据数量</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readSleepDetailDataCount:(AppscommReadIntegerValueCallback)<em>competion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取睡眠详细数据数量</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeUserInfoWithGenderIsFemale:height:weight:willCleanData:completion:" title="writeUserInfoWithGenderIsFemale:height:weight:willCleanData:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeUserInfoWithGenderIsFemale:height:weight:willCleanData:completion:">&ndash;&nbsp;writeUserInfoWithGenderIsFemale:height:weight:willCleanData:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化设备,身高单位是厘米，体重单位是克</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeUserInfoWithGenderIsFemale:(BOOL)<em>isFemale</em> height:(NSUInteger)<em>height</em> weight:(NSUInteger)<em>weight</em> willCleanData:(BOOL)<em>isCleanData</em> completion:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isFemale</code></th>
+						<td><p>性别</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>height</code></th>
+						<td><p>身高(cm)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>weight</code></th>
+						<td><p>体重(g)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isCleanData</code></th>
+						<td><p>是否清除数据，绑定的时候要清空数据</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化设备,身高单位是厘米，体重单位是克</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readUserInfo:" title="readUserInfo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readUserInfo:">&ndash;&nbsp;readUserInfo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取用户信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readUserInfo:(AppscommReadUserInfoCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取用户信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeStepsGoal:completion:" title="writeStepsGoal:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeStepsGoal:completion:">&ndash;&nbsp;writeStepsGoal:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置步数目标值</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeStepsGoal:(NSUInteger)<em>stepsGoal</em> completion:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>stepsGoal</code></th>
+						<td><p>步数目标值</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置步数目标值</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeCaloriesGoal:completion:" title="writeCaloriesGoal:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeCaloriesGoal:completion:">&ndash;&nbsp;writeCaloriesGoal:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置卡路里目标值</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeCaloriesGoal:(NSUInteger)<em>caloriesGoal</em> completion:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>caloriesGoal</code></th>
+						<td><p>卡路里目标值</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置卡路里目标值</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeDistanceGoal:completion:" title="writeDistanceGoal:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeDistanceGoal:completion:">&ndash;&nbsp;writeDistanceGoal:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置距离目标值</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeDistanceGoal:(NSUInteger)<em>distanceGoal</em> completion:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>distanceGoal</code></th>
+						<td><p>距离目标值</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置距离目标值</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addReminderWithType:hour:minute:period:completion:" title="addReminderWithType:hour:minute:period:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addReminderWithType:hour:minute:period:completion:">&ndash;&nbsp;addReminderWithType:hour:minute:period:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加提醒(用时间来唯一标识提醒)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addReminderWithType:(AppscommReminderType)<em>type</em> hour:(NSUInteger)<em>hour</em> minute:(NSUInteger)<em>minute</em> period:(NSUInteger)<em>period</em> completion:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>提醒类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hour</code></th>
+						<td><p>小时</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>minute</code></th>
+						<td><p>分钟</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>period</code></th>
+						<td><p>周期</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加提醒(用时间来唯一标识提醒)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteReminderWithHour:minute:completion:" title="deleteReminderWithHour:minute:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteReminderWithHour:minute:completion:">&ndash;&nbsp;deleteReminderWithHour:minute:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除提醒</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteReminderWithHour:(Byte)<em>hour</em> minute:(Byte)<em>minute</em> completion:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hour</code></th>
+						<td><p>小时</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>minute</code></th>
+						<td><p>分钟</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除提醒</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cleanAllReminders:" title="cleanAllReminders:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cleanAllReminders:">&ndash;&nbsp;cleanAllReminders:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>清空提醒</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cleanAllReminders:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>清空提醒</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readReminders:" title="readReminders:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readReminders:">&ndash;&nbsp;readReminders:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取所有提醒</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readReminders:(AppscommReadRemindersCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取所有提醒</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetDevice" title="resetDevice"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetDevice">&ndash;&nbsp;resetDevice</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>恢复出厂设置(此命令发送之后，设备不会响应，所以不需要回调)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resetDevice</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>恢复出厂设置(此命令发送之后，设备不会响应，所以不需要回调)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeSystemTime:" title="writeSystemTime:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeSystemTime:">&ndash;&nbsp;writeSystemTime:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>写入手机时间</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeSystemTime:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>写入手机时间</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeCustomTimeWithYear:month:day:hour:minute:second:completion:" title="writeCustomTimeWithYear:month:day:hour:minute:second:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeCustomTimeWithYear:month:day:hour:minute:second:completion:">&ndash;&nbsp;writeCustomTimeWithYear:month:day:hour:minute:second:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自定义时间写入</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeCustomTimeWithYear:(NSUInteger)<em>year</em> month:(NSUInteger)<em>month</em> day:(NSUInteger)<em>day</em> hour:(NSUInteger)<em>hour</em> minute:(NSUInteger)<em>minute</em> second:(NSUInteger)<em>second</em> completion:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>year</code></th>
+						<td><p>年</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>month</code></th>
+						<td><p>月</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>day</code></th>
+						<td><p>日</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hour</code></th>
+						<td><p>时</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>minute</code></th>
+						<td><p>分</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>second</code></th>
+						<td><p>秒</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>自定义时间写入</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeTimeFormat:distanceUnit:completion:" title="writeTimeFormat:distanceUnit:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeTimeFormat:distanceUnit:completion:">&ndash;&nbsp;writeTimeFormat:distanceUnit:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>设置时间格式和距离单位
+*</li>
+<li>@param format 时间格式</li>
+<li>@param unit   距离单位</li>
+<li>@since AppscommTimeFormat中'<a href="../Constants/AppscommTimeFormat.html">AppscommTimeFormat</a><em>24H'和'<a href="../Constants/AppscommTimeFormat.html">AppscommTimeFormat</a></em>12H'支持所有设备，
+        其他只支持设备:L11, L38A, L28W, L28H
+        v2.1.1之后，format不再限制AppscommTimeFormat类型，整数即可，因为这个参数在各个产品都不同，可以自定义</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeTimeFormat:(NSUInteger)<em>format</em> distanceUnit:(AppscommDidstanceUnit)<em>unit</em> completion:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>设置时间格式和距离单位
+*</li>
+<li>@param format 时间格式</li>
+<li>@param unit   距离单位</li>
+<li>@since AppscommTimeFormat中'<a href="../Constants/AppscommTimeFormat.html">AppscommTimeFormat</a><em>24H'和'<a href="../Constants/AppscommTimeFormat.html">AppscommTimeFormat</a></em>12H'支持所有设备，
+        其他只支持设备:L11, L38A, L28W, L28H
+        v2.1.1之后，format不再限制AppscommTimeFormat类型，整数即可，因为这个参数在各个产品都不同，可以自定义</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readTimeFormatAndDistanceUnit:" title="readTimeFormatAndDistanceUnit:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readTimeFormatAndDistanceUnit:">&ndash;&nbsp;readTimeFormatAndDistanceUnit:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取时间格式和距离单位</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readTimeFormatAndDistanceUnit:(AppscommReadTimeFormatAndDistanceUnitCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取时间格式和距离单位</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeAutomaticSleepOpened:sleepHour:sleepMinute:awakeHour:awakeMinute:completion:" title="writeAutomaticSleepOpened:sleepHour:sleepMinute:awakeHour:awakeMinute:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeAutomaticSleepOpened:sleepHour:sleepMinute:awakeHour:awakeMinute:completion:">&ndash;&nbsp;writeAutomaticSleepOpened:sleepHour:sleepMinute:awakeHour:awakeMinute:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>设置预设睡眠时间，设备会自动进入睡眠，自动醒来</li>
+<li>@since 只支持设备:L11, L38A, L28W, L28H
+*</li>
+<li>@param isOpened    开关状态</li>
+<li>@param sleepHour   睡眠小时数</li>
+<li>@param sleepMinute 睡眠分钟数</li>
+<li>@param awakeHour   醒来小时数</li>
+<li>@param awakeMinute 醒来分钟数</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeAutomaticSleepOpened:(BOOL)<em>isOpened</em> sleepHour:(NSUInteger)<em>sleepHour</em> sleepMinute:(NSUInteger)<em>sleepMinute</em> awakeHour:(NSUInteger)<em>awakeHour</em> awakeMinute:(NSUInteger)<em>awakeMinute</em> completion:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>设置预设睡眠时间，设备会自动进入睡眠，自动醒来</li>
+<li>@since 只支持设备:L11, L38A, L28W, L28H
+*</li>
+<li>@param isOpened    开关状态</li>
+<li>@param sleepHour   睡眠小时数</li>
+<li>@param sleepMinute 睡眠分钟数</li>
+<li>@param awakeHour   醒来小时数</li>
+<li>@param awakeMinute 醒来分钟数</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readAutomaticSleepTime:" title="readAutomaticSleepTime:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readAutomaticSleepTime:">&ndash;&nbsp;readAutomaticSleepTime:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取预设睡眠参数</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readAutomaticSleepTime:(AppscommReadAutomaticSleepTimeCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>只支持设备:L11, L38A, L28W, L28H</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取预设睡眠参数</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/manuallyEnterSleep:" title="manuallyEnterSleep:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/manuallyEnterSleep:">&ndash;&nbsp;manuallyEnterSleep:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>手动让设备进入睡眠</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)manuallyEnterSleep:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>只支持设备:L11, L38A, L28W</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>手动让设备进入睡眠</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/manuallyQuitSleep:" title="manuallyQuitSleep:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/manuallyQuitSleep:">&ndash;&nbsp;manuallyQuitSleep:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>手动让设备退出睡眠</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)manuallyQuitSleep:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>只支持设备:L11, L38A, L28W</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>手动让设备退出睡眠</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeNotificationsWithCallsStatus:missedCallsStatus:SMSStatus:emailStatus:socialMediaStatus:calendarStatus:antiLostStatus:completion:" title="writeNotificationsWithCallsStatus:missedCallsStatus:SMSStatus:emailStatus:socialMediaStatus:calendarStatus:antiLostStatus:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeNotificationsWithCallsStatus:missedCallsStatus:SMSStatus:emailStatus:socialMediaStatus:calendarStatus:antiLostStatus:completion:">&ndash;&nbsp;writeNotificationsWithCallsStatus:missedCallsStatus:SMSStatus:emailStatus:socialMediaStatus:calendarStatus:antiLostStatus:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>通知开关设置</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeNotificationsWithCallsStatus:(BOOL)<em>callIsOpened</em> missedCallsStatus:(BOOL)<em>missedCallIsOpened</em> SMSStatus:(BOOL)<em>SMSIsOpened</em> emailStatus:(BOOL)<em>emailIsOpened</em> socialMediaStatus:(BOOL)<em>socialIsOpened</em> calendarStatus:(BOOL)<em>calendarIsOpened</em> antiLostStatus:(BOOL)<em>antiLostIsOpened</em> completion:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callIsOpened</code></th>
+						<td><p>来电</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>missedCallIsOpened</code></th>
+						<td><p>未接来电</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>SMSIsOpened</code></th>
+						<td><p>短信</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>emailIsOpened</code></th>
+						<td><p>邮件</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>socialIsOpened</code></th>
+						<td><p>社交</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>calendarIsOpened</code></th>
+						<td><p>日历</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>antiLostIsOpened</code></th>
+						<td><p>防丢</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>只支持设备:L11, L38A, L28T, L28W, L28H</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>通知开关设置</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readNotificationsStatus:" title="readNotificationsStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readNotificationsStatus:">&ndash;&nbsp;readNotificationsStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取通知状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readNotificationsStatus:(AppscommReadNotificationsStatusCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>只支持设备:L11, L38A, L28T, L28W, L28H</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取通知状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeInactivityAlertStatus:internal:startHour:startMinute:endHour:endMinute:period:steps:completion:" title="writeInactivityAlertStatus:internal:startHour:startMinute:endHour:endMinute:period:steps:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeInactivityAlertStatus:internal:startHour:startMinute:endHour:endMinute:period:steps:completion:">&ndash;&nbsp;writeInactivityAlertStatus:internal:startHour:startMinute:endHour:endMinute:period:steps:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置久坐提醒</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeInactivityAlertStatus:(BOOL)<em>isOpen</em> internal:(NSUInteger)<em>internal</em> startHour:(NSUInteger)<em>startHour</em> startMinute:(NSUInteger)<em>startMinute</em> endHour:(NSUInteger)<em>endHour</em> endMinute:(NSUInteger)<em>endMinute</em> period:(NSUInteger)<em>period</em> steps:(NSUInteger)<em>steps</em> completion:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isOpen</code></th>
+						<td><p>开关</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>internal</code></th>
+						<td><p>间隔</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startHour</code></th>
+						<td><p>开始小时</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startMinute</code></th>
+						<td><p>开始分钟</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>endHour</code></th>
+						<td><p>结束小时</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>endMinute</code></th>
+						<td><p>结束分钟</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>period</code></th>
+						<td><p>周期, AppscommWeekPeriod类型组合, 例如周期为每周的星期一和星期二
+NSUInteger period = AppscommPeriodMonday | AppscommPeriodTuesday;</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>steps</code></th>
+						<td><p>有效步数,超过有效步数才算运动</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>只支持设备:L11, L38A, L28W, L28H</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置久坐提醒</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readInactivityAlertInfo:" title="readInactivityAlertInfo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readInactivityAlertInfo:">&ndash;&nbsp;readInactivityAlertInfo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取久坐提醒信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readInactivityAlertInfo:(AppscommReadInactivityAlertInfoCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>只支持设备:L11, L38A, L28W, L28H</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取久坐提醒信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeScreenLightness:completion:" title="writeScreenLightness:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeScreenLightness:completion:">&ndash;&nbsp;writeScreenLightness:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置屏幕亮度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeScreenLightness:(AppscommLightness)<em>lightness</em> completion:(AppscommWriteSettingsCallback)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lightness</code></th>
+						<td><p>亮度</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>只支持设备:L11, L38A, L28W, L28H</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置屏幕亮度</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readScreenLightness:" title="readScreenLightness:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readScreenLightness:">&ndash;&nbsp;readScreenLightness:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取屏幕亮度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readScreenLightness:(AppscommReadLightnessCallback)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>只支持设备:L11, L38A, L28W, L28H</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取屏幕亮度</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppscommBluetoothSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Appscomm. All rights reserved. Updated: 2015-09-01</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

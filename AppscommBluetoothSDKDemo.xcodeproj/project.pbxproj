@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842B8E221B954F9E00A9FD1F /* libAppscommBluetoothSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842B8E211B954F9E00A9FD1F /* libAppscommBluetoothSDK.a */; };
 		842BA1BA1B074DF3005144A4 /* ScanDevicesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842BA1B91B074DF3005144A4 /* ScanDevicesTableViewController.m */; };
 		8440AE531B0B4EE4009F6BFA /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8440AE521B0B4EE4009F6BFA /* NSDate+Utilities.m */; };
 		846EA9151B059E6D00F51D0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EA9141B059E6D00F51D0B /* main.m */; };
@@ -21,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		842B8E1E1B954F9E00A9FD1F /* AppscommBluetoothSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppscommBluetoothSDK.h; sourceTree = "<group>"; };
+		842B8E1F1B954F9E00A9FD1F /* AppscommDataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppscommDataTypes.h; sourceTree = "<group>"; };
+		842B8E201B954F9E00A9FD1F /* AppscommDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppscommDevice.h; sourceTree = "<group>"; };
+		842B8E211B954F9E00A9FD1F /* libAppscommBluetoothSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppscommBluetoothSDK.a; sourceTree = "<group>"; };
 		842BA1B81B074DF3005144A4 /* ScanDevicesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanDevicesTableViewController.h; sourceTree = "<group>"; };
 		842BA1B91B074DF3005144A4 /* ScanDevicesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanDevicesTableViewController.m; sourceTree = "<group>"; };
 		8440AE511B0B4EE4009F6BFA /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
@@ -39,9 +44,6 @@
 		846EA9561B06EFEA00F51D0B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = AppscommBluetoothSDKDemo/PrefixHeader.pch; sourceTree = "<group>"; };
 		849C593E1B13F9CA00095451 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		849C593F1B13F9CA00095451 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		849C5A9D1B182E9900095451 /* AppscommBluetoothSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppscommBluetoothSDK.h; sourceTree = "<group>"; };
-		849C5A9E1B182E9900095451 /* AppscommDataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppscommDataTypes.h; sourceTree = "<group>"; };
-		849C5A9F1B182E9900095451 /* AppscommDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppscommDevice.h; sourceTree = "<group>"; };
 		84D4D3D81B107A0F00E490FD /* SelectProductTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectProductTableViewController.h; sourceTree = "<group>"; };
 		84D4D3D91B107A0F00E490FD /* SelectProductTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectProductTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,12 +54,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				846EA94D1B05AFBA00F51D0B /* CoreBluetooth.framework in Frameworks */,
+				842B8E221B954F9E00A9FD1F /* libAppscommBluetoothSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842B8E1D1B954F9E00A9FD1F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				842B8E1E1B954F9E00A9FD1F /* AppscommBluetoothSDK.h */,
+				842B8E1F1B954F9E00A9FD1F /* AppscommDataTypes.h */,
+				842B8E201B954F9E00A9FD1F /* AppscommDevice.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		846EA9061B059E6D00F51D0B = {
 			isa = PBXGroup;
 			children = (
@@ -112,25 +125,8 @@
 		849C5A9A1B182E9900095451 /* AppscommBluetoothSDK */ = {
 			isa = PBXGroup;
 			children = (
-				849C5A9B1B182E9900095451 /* include */,
-			);
-			path = AppscommBluetoothSDK;
-			sourceTree = "<group>";
-		};
-		849C5A9B1B182E9900095451 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				849C5A9C1B182E9900095451 /* AppscommBluetoothSDK */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		849C5A9C1B182E9900095451 /* AppscommBluetoothSDK */ = {
-			isa = PBXGroup;
-			children = (
-				849C5A9D1B182E9900095451 /* AppscommBluetoothSDK.h */,
-				849C5A9E1B182E9900095451 /* AppscommDataTypes.h */,
-				849C5A9F1B182E9900095451 /* AppscommDevice.h */,
+				842B8E1D1B954F9E00A9FD1F /* include */,
+				842B8E211B954F9E00A9FD1F /* libAppscommBluetoothSDK.a */,
 			);
 			path = AppscommBluetoothSDK;
 			sourceTree = "<group>";
@@ -333,8 +329,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/AppscommBluetoothSDK/Debug",
+					"$(PROJECT_DIR)/AppscommBluetoothSDK",
 				);
-				OTHER_LDFLAGS = "-lAppscommBluetoothSDK";
+				OTHER_LDFLAGS = "-ObjC";
 				PRELINK_LIBS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -352,8 +349,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/AppscommBluetoothSDK/Release",
+					"$(PROJECT_DIR)/AppscommBluetoothSDK",
 				);
-				OTHER_LDFLAGS = "-lAppscommBluetoothSDK";
+				OTHER_LDFLAGS = "-ObjC";
 				PRELINK_LIBS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

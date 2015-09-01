@@ -5,10 +5,9 @@ AppscommBluetoothSDK-iOS 是广东乐源数字技术有限公司对手环蓝牙�
 iOS 7.0+
 
 # 使用说明
-- 添加`CoreBluetooth.framework`
-- 在`Build Settings`的`Library Search Paths`分别添加`Debug`和`Release`的目录，即lib所在目录。Debug的lib有蓝牙命令的log输出，便于调试
-- 在`Build Settings`的`Other Link Flags`添加`-lAppscommBluetoothSDK`
-- lib支持armv7, arm64, i386
+- 将目录`AppscommBluetoothSDK`拖到工程里面，添加`CoreBluetooth.framework`
+- 在`Build Settings`的`Other Link Flags`添加`-ObjC`
+- import header文件
 - 首先在`didFinishLaunchingWithOptions`调用`[AppscommBluetoothSDK startRunBluetooth]`
 
 ```
@@ -60,3 +59,25 @@ __weak ScanDevicesTableViewController *weakSelf = self;
                            antiLostStatus:(BOOL)antiLostIsOpened
                                completion:(AppscommWriteSettingsCallback)completion;
 ```
+
+#更新历史
+
+###v2.2
+- 解决扫描时崩溃的问题
+- 解决已连接设备获取不了的问题
+
+###v2.1.2 
+- 当蓝牙功能关闭时，调用系统的打开蓝牙提示
+
+###v2.1.1
+- 不限制时间格式的类型，因为这个参数在不同产品都不一样
+
+###v2.1
+- 增加停止扫描功能
+- 增加断开连接设备功能
+- 增加超时判断，10秒钟设备无反应将回调NSError
+
+###v2.0
+- 采用Block机制重写蓝牙SDK
+- 增加不同产品类型的兼容性
+
